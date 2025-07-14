@@ -31,6 +31,52 @@
   top:50%;
 }
 
+#navbar{
+  overflow: hidden;
+  background-color: darkred;
+  min-width: 100vw;
+  top:0;
+  left:0;
+  position:absolute;
+}
+#navbar a{
+  float: right;
+  padding: 0.8em 1em;
+  text-decoration: none;
+  font-size: 1.4em;
+}
+#navbar button{
+  font-size: 1em;
+  padding: 0.45em 1em;
+  margin-inline: 0.2em;
+}
+
+#navbar-left{
+  float:left;
+}
+#navbar-button{
+  float:right;
+  padding: 0.4em;
+  font-size: 1.4em;
+}
+
+#pl-cover{
+  width:400px;
+}
+
+.errorMsg{
+  color:#ff0000;
+  font-size: 0.5em;
+  position:absolute;
+  margin: 10px auto 0;
+  transform: translateX(-50%);
+}
+
+.active {
+  background-color:lightgrey;
+  color:#1a1a1a;
+}
+
 .card {
   padding: 2em;
 }
@@ -91,15 +137,40 @@
   border-color:white;
 }
 
+
+table{
+  display: block;
+  empty-cells: show;
+  border:1px solid;
+}
+thead{
+  display:block;
+  overflow-y:scroll;
+}
+tbody{
+  overflow:scroll;
+  display:block;
+  height:60vh;
+}
+tr{
+  display:flex;
+}
+td,th{
+  flex-basis:100%;
+  flex-grow:2;
+  border-bottom: 1px solid darkred;
+  display:block;
+  padding: 0.8em;
+}
+
+
 form {
   white-space:nowrap;
   font-size:2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+section{
+  display:none;
 }
 
 
